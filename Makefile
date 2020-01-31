@@ -32,7 +32,7 @@ CFLAGS  += -I$(ODIR)/include
 LDFLAGS += -L$(ODIR)/lib
 
 ifneq ($(WITH_LUAJIT),)
-	CFLAGS  += -I$(WITH_LUAJIT)/include
+	CFLAGS  += -I$(WITH_LUAJIT)/include/luajit-2.1
 	LDFLAGS += -L$(WITH_LUAJIT)/lib
 else
 	CFLAGS  += -I$(ODIR)/include/luajit-2.1
